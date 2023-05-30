@@ -1,0 +1,137 @@
+body{
+    background-image: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.register-box{
+    width: 360px;
+    height: 520px;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #ffffff80;
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 40px #000000cc; 
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+
+form{
+    width: 300px;
+    margin-left: 10px;
+}
+
+form label{
+    display: flex;
+    margin-top: 10px;
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 3px 2px 0 #000000;
+}
+
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    background-color: #ffffff00;
+    border-bottom: 3px solid #000000;
+    outline: none;
+    color: #ffffff;
+    font-size: 20px;
+    
+}
+
+form input::placeholder{
+    color: #ffffff73;
+    font-style: oblique;
+    font-size: medium;
+}
+
+.save-button {
+    margin-top: 15px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    margin-left: 100px;
+    background-color: #ffffff5e;
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  
+  .save-button:hover {
+    cursor: pointer;
+    background-color: #7c7c7cbb;
+    backdrop-filter: blur(50px);
+  }
+
+.nav{
+    width: 120px;
+    height: 50px;
+    margin: auto;
+    margin-top: 40px;  
+    position: relative;  
+}
+
+.nav-reg-button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+    background-color: #ffffff5e;
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.nav-reg-button:hover {
+    cursor: pointer;
+    background-color: #7c7c7cbb;
+    backdrop-filter: blur(50px);
+  }
+
+  .nav-home-button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    margin-top: 5px;
+    background-color: #ffffff5e;
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.nav-home-button:hover {
+    cursor: pointer;
+    background-color: #7c7c7cbb;
+    backdrop-filter: blur(50px);
+  }
+
+  .home-page-box{
+    width: 580px;
+    height: 600px;
+    margin: auto;
+    margin-top: -525px;
+    position: flex;
+    background-color: transparent;
+    border: 2px solid #ffffff80;
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 40px #000000cc; 
+  }
