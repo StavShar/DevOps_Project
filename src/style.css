@@ -1,5 +1,5 @@
 body{
-    background-image: url('bg2.jpg');
+    background-image: url('bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -51,9 +51,10 @@ form input{
 }
 
 form input::placeholder{
-    color: #ffffff73;
+    color: #383838ab;
     font-style: oblique;
-    font-size: medium;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .save-button {
@@ -123,7 +124,7 @@ form input::placeholder{
     backdrop-filter: blur(50px);
   }
 
-  .home-page-box{
+.home-page-box{
     width: 580px;
     height: 600px;
     margin: auto;
@@ -135,3 +136,62 @@ form input::placeholder{
     backdrop-filter: blur(7px);
     box-shadow: 0 0 40px #000000cc; 
   }
+
+#table-container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.101);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow:auto;
+    }
+
+table {
+    position: absolute;
+    width: 100%;
+    border-collapse: collapse;
+    align-items: center;
+    gap: inherit;
+    
+    }
+
+td {
+    font-size: 15px;
+    text-align: center;
+    background-color: #ffffff61;
+    color: rgb(0, 0, 0);
+    gap: inherit;
+    }
+        
+th {
+    
+    gap: inherit;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    }
+
+::-webkit-scrollbar {
+    width: 12px;
+    }
+    
+::-webkit-scrollbar-track {
+    background-color: #ffffff61;
+    border-radius: 0px 8px 8px 0px;
+    }
+    
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff61;
+    border-radius: 8px 8px 8px 8px;
+    }
+    
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffffd6;
+    }   

@@ -8,33 +8,34 @@
     </head>
     <body>
         <div class="nav">
-            <button class="nav-home-button" id="home-button" onclick="home_page()">Home page</button>
+            <button class="nav-home-button" id="home-button" onclick="table_page()">table page</button>
             <button class="nav-reg-button" id="reg-button" onclick="reg_page()">Register</button>
         </div>
         <div class="register-box" id="reg-box">
             <h1>Register</h1>
             <form>
                 <label>Student name:</label>
-                <input id="name" placeholder="Enter student's full name here...">
+                <input id="name" placeholder="Enter student's name with capital letter...">
                 <label>First grade:</label>
-                <input id="grade1" placeholder="Enter first grade here...">
+                <input id="grade1" type="nubmer" step="1" placeholder="Enter first grade here...">
                 <label>second grade:</label>
-                <input id="grade2" placeholder="Enter second grade here...">
+                <input id="grade2" type="nubmer" step="1" placeholder="Enter second grade here...">
                 <label>Third grade:</label>
-                <input id="grade3" placeholder="Enter third grade here...">
-                <button class="save-button" type="button" onclick="save()">Save</button>
+                <input id="grade3" type="nubmer" step="1" placeholder="Enter third grade here...">
+                <button class="save-button" type="button" onclick="saveData()">Save</button>
             </form>
         </div>
         
         <div class="home-page-box" id="home-box">
-            <h1>Home page</h1>
+            <h1>Table page</h1>
+            <div id="table-container"></div>
         </div>
         <script src="script.js"></script>
     </body>
     <script>  
-        document.getElementById('reg-box').style.visibility = 'hidden';
-        document.getElementById('reg-button').style.visibility = 'visible';
-        document.getElementById('home-box').style.visibility = 'visible';
-        document.getElementById('home-button').style.visibility = 'hidden';
+        document.getElementById('reg-box').style.visibility = 'visible';
+        document.getElementById('reg-button').style.visibility = 'hidden';
+        document.getElementById('home-box').style.visibility = 'hidden';
+        document.getElementById('home-button').style.visibility = 'visible';
     </script>
 </html>
