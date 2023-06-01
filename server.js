@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const registerSchema = require('./src/registerSchema');
-const UrlDb = 'mongodb+srv://stavsh2:STAV1234@devops.eapaysg.mongodb.net/grades';
+const UrlDb = 'mongodb://student-grades:pYdReqSZSnwYZn4s42YUJDrybk6vODBaZg23rs8vTLTy0rEQFesOIWnjIsAryULVck4jmE6kNIarACDbAG6WWw==@student-grades.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@student-grades@'
 
 const app = express();
 
@@ -14,12 +14,11 @@ async function connecttoDB() {
         console.log('Error connecting to DB');
     }
 }
+
 const db = mongoose.connection;
 
-db.on('error', error => { console.error('Failed to connect to MongoDB: ' + error) })
-db.once('open', () => { console.log('Connected to MongoDB.') })
-
-//TODO: async func that retrieve data from db
+db.on('error', async error => { console.error('Failed to connect to MongoDB: ' + error) })
+db.once('open', async () => { console.log('Connected to MongoDB.') })
 
 connecttoDB();
 
