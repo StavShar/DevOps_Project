@@ -1,4 +1,4 @@
-const SERVER_ADDRESS = "http://localhost:3000/";
+const SERVER_ADDRESS = "devopspr0ject.azurewebsites.net";
 
 function table_page() {
     document.getElementById('reg-box').style.visibility = 'hidden';
