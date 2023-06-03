@@ -21,10 +21,11 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: npm install, build, and test
+      - name: npm install, build, eslint, and test
         run: |
           npm install
           npm run build --if-present
+          npm run lint --if-present
           npm run test --if-present
 
       - name: Upload artifact for deployment job
@@ -32,6 +33,8 @@ jobs:
         with:
           name: node-app
           path: .
+    
+      
 
   deploy:
     runs-on: ubuntu-latest
