@@ -24,14 +24,6 @@ function table_page() {
             tableContainer.appendChild(table);
         })
         .catch(err => console.log(err));
-
-
-
-    /*
-    fetch(SERVER_ADDRESS + 'table')
-      .then(res => res.json())
-      .then(data => console.log(data))
-      .catch(err => console.log(err));*/
 }
 
 function reg_page() {
@@ -93,8 +85,9 @@ function saveData() {
     console.log("name: " + name + ", g1: " + g1 + ", g2: " + g2 + ", g3: " + g3);
 }
 
+
 function nameValidation(name) {
-    const regex = /^[A-Z][a-z]*$/;
+    const regex = /^[A-Z][a-z][ ][A-Z][a-z]$/;
     console.log('name validation result of ' + name + ' is: ' + regex.test(name));
     return regex.test(name);
 }
@@ -140,4 +133,9 @@ function createTable(data) {
     table.appendChild(tbody);
 
     return table;
+
 }
+
+try {
+    module.exports = { nameValidation, gradeValidation };
+} catch (e) { console.log(e) }

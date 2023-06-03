@@ -62,7 +62,6 @@ app.post('/save', async (req, res) => {
 });
 
 app.get('/table', async (req, res) => {
-    //const data = { name: 'testName', grade1: '81', grade2: '82', grade3: '65' };
     try {
         console.log('getting all data from DB...');
         const projection = { _id: 0, name: 1, grade1: 1, grade2: 1, grade3: 1 };
