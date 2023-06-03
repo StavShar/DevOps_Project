@@ -87,7 +87,7 @@ function saveData() {
 
 
 function nameValidation(name) {
-    const regex = /^[A-Z][a-z][ ][A-Z][a-z]$/;
+    const regex = /^[A-Z][a-z]*[ ][A-Z][a-z]*$/;
     console.log('name validation result of ' + name + ' is: ' + regex.test(name));
     return regex.test(name);
 }
